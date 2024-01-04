@@ -143,8 +143,14 @@ public class Main {
         var defaultUrl = "https://artemis-staging-localci.artemis.cit.tum.de/";
         var defaultUsernameAdmin = "artemis_test_user_42";
         var defaultPasswordAdmin = System.getenv("DEFAULT_ADMIN_PASSWORD");
+        if (defaultPasswordAdmin == null) {
+            defaultPasswordAdmin = "artemis_test_user_42";
+        }
         var defaultUsernamePattern = "artemis_test_user_{i}";
         var defaultPasswordPattern = System.getenv("DEFAULT_PASSWORD_PATTERN");
+        if (defaultPasswordPattern == null) {
+            defaultPasswordPattern = "artemis_test_user_{i}";
+        }
         var defaultNumberOfCommits = 5;
         var defaultNumberOfUsers = 5;
 
