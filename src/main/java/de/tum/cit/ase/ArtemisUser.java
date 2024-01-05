@@ -77,7 +77,7 @@ public class ArtemisUser {
     public void updateRepository() throws IOException, GitAPIException {
         var localPath = Path.of("repos", username);
         git = Git.open(localPath.toFile());
-        git.pull().setStrategy(MergeStrategy.THEIRS).setCredentialsProvider(new UsernamePasswordCredentialsProvider(username, password)).call();
+        git.pull().setCredentialsProvider(new UsernamePasswordCredentialsProvider(username, password)).call();
         git.close();
     }
 

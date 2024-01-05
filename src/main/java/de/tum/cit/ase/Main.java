@@ -2,9 +2,6 @@ package de.tum.cit.ase;
 
 import de.tum.cit.ase.artemisModel.Course;
 import de.tum.cit.ase.artemisModel.ProgrammingExercise;
-import io.netty.channel.ChannelOption;
-import io.netty.handler.timeout.ReadTimeoutHandler;
-import io.netty.handler.timeout.WriteTimeoutHandler;
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Scheduler;
 import io.reactivex.rxjava3.schedulers.Schedulers;
