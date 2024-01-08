@@ -130,7 +130,7 @@ public class Main {
         var course = createCourse();
         registerInstructorsForCourse(course.getId());
         var exercise = createProgrammingExercise(course);
-        repositoryUrl = exercise.getTemplateParticipation().getRepositoryUrl();
+        repositoryUrl = exercise.getTemplateParticipation().getRepositoryUri();
         log.info("Repository URL: {}", repositoryUrl);
         exerciseShortName = exercise.getShortName();
         log.info("Created course {}", course.getTitle());
